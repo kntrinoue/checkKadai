@@ -17,4 +17,4 @@
 ## 結果
 summary.txtとFig/ooo.pngが出力される。
 * summary.txt：課題ごとに類似度が高い学生同士のファイルパス(名前)が書かれる。
-* Fig/ooo.png：課題のフォルダ名(ooo)の(類似度に関する)樹形図。一番下でクラスタ化されているものはコピー。summary.txtでsim=1.000と出る。樹形図の番号はsummary.txtのfrom_idとto_idでわかる。
+* Fig/ooo.png：課題のフォルダ名(ooo)の(類似度に関する)樹形図。一番下でクラスタ化されているものは完全コピー。summary.txtでsim=1.000と出る。樹形図の番号はsummary.txtのfrom_idとto_idでわかる。
