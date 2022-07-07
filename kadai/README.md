@@ -10,7 +10,7 @@ kadai1/学生B/ex1.c
 
 kadai1/学生C/ex1.c
 
-例2)   この場合はcheckKadai.pyの12行目　filenames = glob.glob("./kadai/"+str(kadaiN)+"/*")　に修正する
+例2)   この場合はcheckKadai.pyの13行目　filenames = glob.glob("./kadai/"+str(kadaiN)+"/*")　に修正する
 
 kadai1/学生A.c
 
