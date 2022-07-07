@@ -1,11 +1,12 @@
 #演習のカンニング・コピーチェック
-#Moodleから課題すべてをダウンロードを想定。フォルダの扱いが分かれば、他のシステムで課題を集めていても、12行目を修正して利用できる
+#Moodleから課題すべてをダウンロードを想定。フォルダの扱いが分かれば、他のシステムで課題を集めていても、13行目を修正して利用できる
 import glob
 from difflib import SequenceMatcher
 from scipy.cluster.hierarchy import dendrogram, linkage
 import matplotlib.pyplot as plt #プログラムと同じフォルダにFigフォルダを作成する.課題ごとの樹形図が入る
 threshold = 0.9 # 0-1の範囲で1に近いほど似ている。thresholdより大きい組み合わせを出力する
-
+#課題のフォルダ名のリストを書く
+kadaiNum = [61,62,63,64]
 
 def checkCopy(kadaiN, fo, fig):
     #ある課題のファイルをフォルダからすべて取り出す
@@ -58,10 +59,8 @@ def checkCopy(kadaiN, fo, fig):
     fo.write("***********\n")
 
 
-#main
-#課題のフォルダ名のリストを書く
-kadaiNum = [61,62,63,64,71,72,73,81,82,83,84,91,92,93,101,102,111,112,113,121,122,123]
 
+#output
 fo = open('summary.txt','w')
 fig=plt.figure(figsize=(14, 5))
 for i in kadaiNum:
